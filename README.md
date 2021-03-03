@@ -12,6 +12,6 @@ https://github.com/adi1090x/polybar-themes
 
 You can find all of the wallpapers I use in the main branch.
 
-#### Have fun and feel free to ask me any questions!
+#### Have fun and feel free to create an issue if you have any problems!
 
 ![alt text](https://media.discordapp.net/attachments/609017398242312195/815252043367317584/cutepfpidkanymore.png)
