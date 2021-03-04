@@ -3,7 +3,7 @@
 @import "colors.rasi"
 
 * {
-    background-color:       @bg;
+    background-color:       @bga;
     text-color:             @fg;
 	font:				 	"Terminus 9";
 }
@@ -11,14 +11,14 @@
 window {
     width:      			320px;
     padding:    			25px;
-    border:					0px 0px 0px 2px;
+    border:					0px;
     border-radius:          0px;
-    border-color:           @bg3;
+    border-color:           @ac;
     location:               center;
     y-offset:               -2em;
 }
 
 entry {
     expand: 				true;
-    text-color:				@bg2;
+    text-color:				@ac;
 }

@@ -7,29 +7,23 @@ RFILE="$HOME/.config/polybar/scripts/rofi/colors.rasi"
 # Change colors
 change_color() {
 	# polybar
-	sed -i -e "s/background = #.*/background = $BG/g" $PFILE
-	sed -i -e "s/foreground = #.*/foreground = $FG/g" $PFILE
-	sed -i -e "s/foreground-alt = #.*/foreground-alt = $FGA/g" $PFILE
-	sed -i -e "s/shade1 = #.*/shade1 = $SH1/g" $PFILE
-	sed -i -e "s/shade2 = #.*/shade2 = $SH2/g" $PFILE
-	sed -i -e "s/shade3 = #.*/shade3 = $SH3/g" $PFILE
-	sed -i -e "s/shade4 = #.*/shade4 = $SH4/g" $PFILE
-	sed -i -e "s/shade5 = #.*/shade5 = $SH5/g" $PFILE
-	sed -i -e "s/shade6 = #.*/shade6 = $SH6/g" $PFILE
-	sed -i -e "s/shade7 = #.*/shade7 = $SH7/g" $PFILE
-	sed -i -e "s/shade8 = #.*/shade8 = $SH8/g" $PFILE
+	sed -i -e "s/background = #.*/background = #${BG}/g" $PFILE
+	sed -i -e "s/background-alt = #.*/background-alt = #8C${BG}/g" $PFILE
+	sed -i -e "s/foreground = #.*/foreground = #${FG}/g" $PFILE
+	sed -i -e "s/foreground-alt = #.*/foreground-alt = #33${FG}/g" $PFILE
+	sed -i -e "s/primary = #.*/primary = $AC/g" $PFILE
 	
 	# rofi
 	cat > $RFILE <<- EOF
 	/* colors */
 
 	* {
-	  al:    #00000000;
-	  bg:    #141C21FF;
-	  bg1:   ${SH8}FF;
-	  bg2:   ${SH7}FF;
-	  bg3:   ${SH6}FF;
-	  fg:    #FFFFFFFF;
+	  al:   #00000000;
+	  bg:   #${BG}BF;
+	  bga:  #${BG}FF;
+	  fg:   #${FG}FF;
+	  ac:   ${AC}FF;
+	  se:   ${AC}1A;
 	}
 	EOF
 	
@@ -68,17 +62,30 @@ get_random_color() {
 	echo $RCOLOR
 }
 
-# Main
-BG='#141C21'	# change to light bg
-FG='#141C21'	# change to dark fg
-FGA='#FFFFFF'	# change to gray fg
-SH1=`get_random_color`
-SH2=`get_random_color`
-SH3=`get_random_color`
-SH4=`get_random_color`
-SH5=`get_random_color`
-SH6=`get_random_color`
-SH7=`get_random_color`
-SH8=`get_random_color`
+hex_to_rgb() {
+    # Convert a hex value WITHOUT the hashtag (#)
+    R=$(printf "%d" 0x${1:0:2})
+    G=$(printf "%d" 0x${1:2:2})
+    B=$(printf "%d" 0x${1:4:2})
+}
 
+get_fg_color(){
+    INTENSITY=$(calc "$R*0.299 + $G*0.587 + $B*0.114")
+    
+    if [ $(echo "$INTENSITY>186" | bc) -eq 1 ]; then
+        FG="0a0a0a"
+        AC="#0a0a0a"
+    else
+        FG="F5F5F5"
+        AC="#F5F5F5"
+    fi
+}
+
+# Main
+BGC=`get_random_color`
+BG=${BGC:1}
+HEX=$BG
+
+hex_to_rgb $HEX
+get_fg_color
 change_color

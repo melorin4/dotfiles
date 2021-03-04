@@ -11,7 +11,7 @@ configuration {
 	font:							"Terminus 9";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
-    display-drun: 					"";
+    display-drun: 					"";
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;
@@ -26,7 +26,7 @@ window {
     background-color:               @bg;
     text-color:                     @fg;
 	border:							0px;
-	border-color:					@bg1;
+	border-color:					@ac;
     border-radius:                  0px;
 	width:							400px;
     location:                       center;
@@ -36,50 +36,49 @@ window {
 
 prompt {
     enabled: 						true;
-	padding: 						12px 15px 12px 15px;
-	background-color: 				@bg2;
-	text-color: 					@fga;
+	padding: 						0px 0px 0px 5px;
+	background-color: 				@al;
+	text-color: 					@fg;
 }
 
 textbox-prompt-colon {
-	padding: 						11px 15px 10px 15px;
-	font:							"Iosevka Nerd Font 8";
-	background-color: 				@bg1;
-	text-color: 					@fga;
+	padding: 						0px 0px 0px 2px;
+	background-color: 				@al;
+	text-color: 					@ac;
 	expand: false;
-	str: "直";
+	str: "";
+	font:							"feather 8";
 }
 
 entry {
-    background-color:               @bg2;
-    text-color:                     @fga;
-    placeholder-color:              @fga;
+    background-color:               @al;
+    text-color:                     @fg;
+    placeholder-color:              @fg;
     expand:                         true;
     horizontal-align:               0;
     placeholder:                    "Search...";
-	padding: 						15px 0px 0px 15px;
-    margin:                         0px 250px 0px 0px;
-    border-radius:                  0px 50px 50px 0px;
+    padding:                        0px;
     blink:                          true;
 }
 
 inputbar {
 	children: 						[ textbox-prompt-colon, prompt ];
-    background-color:               @bg2;
+    background-color:               @bga;
     text-color:                     @fg;
     expand:                         false;
-	border:							0px;
+	border:							0px 0px 0px 0px;
     border-radius:                  0px;
 	border-color:					@ac;
-    spacing:                        0px;
+    margin:                         0px;
+    padding:                        12px;
 }
 
 listview {
     background-color:               @al;
-    padding:                        10px 10px 10px 10px;
+    padding:                        0px;
     columns:                        1;
     lines:                          8;
-    spacing:                        5px;
+    spacing:                        0px;
     cycle:                          true;
     dynamic:                        true;
     layout:                         vertical;
@@ -89,7 +88,7 @@ mainbox {
     background-color:               @al;
 	border:							0px;
     border-radius:                  0px;
-	border-color:					@bg4;
+	border-color:					@ac;
     children:                       [ inputbar, listview ];
     spacing:                       	0px;
     padding:                        0px;
@@ -100,7 +99,7 @@ element {
     text-color:                     @fg;
     orientation:                    horizontal;
     border-radius:                  0px;
-	padding: 						8px 8px 8px -4px;
+    padding:                        8px 8px 8px -15px;
 }
 
 element-icon {
@@ -116,9 +115,9 @@ element-text {
 }
 
 element selected {
-    background-color:               @bg;
-    text-color:                     @bg3;
-	border:							0px;
+    background-color:               @se;
+    text-color:                     @fg;
+	border:							0px 0px 0px 2px;
     border-radius:                  0px;
-    border-color:                  	@bg;
+    border-color:                  	@ac;
 }
