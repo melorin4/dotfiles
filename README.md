@@ -2,6 +2,9 @@
 
 ![alt text](https://media.discordapp.net/attachments/793874770122113085/816266469662261258/image7.png?width=811&height=456)
 
+![alt text](https://media.discordapp.net/attachments/793874770122113085/817063950654636072/image9.png?width=396&height=445)
+
+
 ## Polybar
 My Polybar theme is a slightly modified version of adi1090x's polybar-themes
 ```
