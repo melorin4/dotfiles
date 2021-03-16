@@ -1,8 +1,9 @@
 # My Dotfiles
-
-![alt text](https://media.discordapp.net/attachments/793874770122113085/816266469662261258/image7.png?width=811&height=456)
+![alt text](https://preview.redd.it/pmcjkaqfrcn61.png?width=640&crop=smart&auto=webp&s=11e29876acc22f98599f8c50d49c29332d0455af)
 
 ![alt text](https://media.discordapp.net/attachments/793874770122113085/817063950654636072/image9.png?width=396&height=445)
+
+![alt text](https://media.discordapp.net/attachments/793874770122113085/816266469662261258/image7.png?width=811&height=456)
 
 
 ## Polybar
