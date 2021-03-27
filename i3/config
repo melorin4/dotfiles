@@ -207,7 +207,7 @@ gaps inner 13
 
 # Polybar
 
-exec_always --no-startup-id zsh /home/lorin/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # set wallpaper
 exec nitrogen --no-startup-id --restore
