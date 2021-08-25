@@ -1,48 +1,50 @@
 /**
- * @name Nocturnal
- * @version 2.6.1
- * @description A simple & clean dark theme for thoses who live at night, made to be easy on the eye.
- * @author Spectra#7698
- * @invite PZdnCVD
- * @source https://github.com/codedotspectra/themes
- * @website https://codedotspectra.me/
- *//*
-███╗   ██╗ ██████╗  ██████╗████████╗██╗   ██╗██████╗ ███╗   ██╗ █████╗ ██╗
-████╗  ██║██╔═══██╗██╔════╝╚══██╔══╝██║   ██║██╔══██╗████╗  ██║██╔══██╗██║
-██╔██╗ ██║██║   ██║██║        ██║   ██║   ██║██████╔╝██╔██╗ ██║███████║██║
-██║╚██╗██║██║   ██║██║        ██║   ██║   ██║██╔══██╗██║╚██╗██║██╔══██║██║
-██║ ╚████║╚██████╔╝╚██████╗   ██║   ╚██████╔╝██║  ██║██║ ╚████║██║  ██║███████╗
-╚═╝  ╚═══╝ ╚═════╝  ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
-###################################################################################################
-Nocturnal Theme for Better Discord
-The author (Spectra#7698) retains full rights of this code.
-You are not allowed to redistribute this theme or any part of it as your own. That means do not post an edited version of this theme anywhere.
-You are allowed to edit the theme for personal use only.
-If you enjoy using the theme, help spread the word!
-This theme is meant to be used with the dark version of discord
-/*#################################################################################################*/
-/* Main Import */
-@import url('https://codedotspectra.github.io/themes/nocturnal/importCSS/core.css');
-/* MiniThemes */
-@import url('https://codedotspectra.github.io/themes/core/hljs.css');
-@import url('https://codedotspectra.github.io/themes/core/settings-icons.css');
-@import url('https://discordstyles.github.io/RadialStatus/base.css');
-@import url('https://codedotspectra.github.io/themes/core/badges.css');
-/* Fixes */
-@import url('https://xcruxiex.github.io/BBDThemes/Fixes/NocturnalFixes.css');
-/*#################################################################################################*/
+* @name Nocturnal
+* @author Spectra#4577
+* @description For when default discord just isn't dark enough, a theme for those who live a night
+* @invite PZdnCVD
+* @version 3.0.0
+*/
+@import url("https://codedotspectra.github.io/themes/themes-cores/nocturnal.css");
+/*
+                                                                                                                                                                     
+                                                                                                                                                                     
+NNNNNNNN        NNNNNNNN                                              tttt                                                                                   lllllll 
+N:::::::N       N::::::N                                           ttt:::t                                                                                   l:::::l 
+N::::::::N      N::::::N                                           t:::::t                                                                                   l:::::l 
+N:::::::::N     N::::::N                                           t:::::t                                                                                   l:::::l 
+N::::::::::N    N::::::N   ooooooooooo       ccccccccccccccccttttttt:::::ttttttt    uuuuuu    uuuuuu rrrrr   rrrrrrrrr   nnnn  nnnnnnnn      aaaaaaaaaaaaa    l::::l 
+N:::::::::::N   N::::::N oo:::::::::::oo   cc:::::::::::::::ct:::::::::::::::::t    u::::u    u::::u r::::rrr:::::::::r  n:::nn::::::::nn    a::::::::::::a   l::::l 
+N:::::::N::::N  N::::::No:::::::::::::::o c:::::::::::::::::ct:::::::::::::::::t    u::::u    u::::u r:::::::::::::::::r n::::::::::::::nn   aaaaaaaaa:::::a  l::::l 
+N::::::N N::::N N::::::No:::::ooooo:::::oc:::::::cccccc:::::ctttttt:::::::tttttt    u::::u    u::::u rr::::::rrrrr::::::rnn:::::::::::::::n           a::::a  l::::l 
+N::::::N  N::::N:::::::No::::o     o::::oc::::::c     ccccccc      t:::::t          u::::u    u::::u  r:::::r     r:::::r  n:::::nnnn:::::n    aaaaaaa:::::a  l::::l 
+N::::::N   N:::::::::::No::::o     o::::oc:::::c                   t:::::t          u::::u    u::::u  r:::::r     rrrrrrr  n::::n    n::::n  aa::::::::::::a  l::::l 
+N::::::N    N::::::::::No::::o     o::::oc:::::c                   t:::::t          u::::u    u::::u  r:::::r              n::::n    n::::n a::::aaaa::::::a  l::::l 
+N::::::N     N:::::::::No::::o     o::::oc::::::c     ccccccc      t:::::t    ttttttu:::::uuuu:::::u  r:::::r              n::::n    n::::na::::a    a:::::a  l::::l 
+N::::::N      N::::::::No:::::ooooo:::::oc:::::::cccccc:::::c      t::::::tttt:::::tu:::::::::::::::uur:::::r              n::::n    n::::na::::a    a:::::a l::::::l
+N::::::N       N:::::::No:::::::::::::::o c:::::::::::::::::c      tt::::::::::::::t u:::::::::::::::ur:::::r              n::::n    n::::na:::::aaaa::::::a l::::::l
+N::::::N        N::::::N oo:::::::::::oo   cc:::::::::::::::c        tt:::::::::::tt  uu::::::::uu:::ur:::::r              n::::n    n::::n a::::::::::aa:::al::::::l
+NNNNNNNN         NNNNNNN   ooooooooooo       cccccccccccccccc          ttttttttttt      uuuuuuuu  uuuurrrrrrr              nnnnnn    nnnnnn  aaaaaaaaaa  aaaallllllll
+                                                                                                                                                                     
+                                                                                                                                                                     
+*/
+@import url("https://monstrousdev.github.io/themes/addons/user-tags.css");
+@import url("https://discord-custom-covers.github.io/usrbg/dist/usrbg.css");
+@import url("https://codedotspectra.github.io/themes/core/badges.css");
+
+@import url("https://codedotspectra.github.io/themes/core/hljs.css"); /* Better Hljs */
+@import url("https://discordstyles.github.io/RadialStatus/base.css"); /* Radial Status */
 :root {
-  --backgroundDark: rgb(24, 28, 37);
-  --backgroundDarker: rgb(20, 23, 31);
-  --primary: #2D4A5D;
-  --primaryGradient1: var(--primary);
-  --primaryGradient2: #00e68a;
-  --DangerColor: #dc3545;
-  --WarningColor: #ffc107;
-  --SuccesColor: #28a745;
-  --backgroundCode: rgba(0,0,0,.35);
-  --backgroundName: rgba(0,0,0,.2);
-  
+  --backgroundColor01: #1e2731;
+  --backgroundColor02: #12171d;
+  --mainColor: #2275c9;
+  --gradientColor01: #00F260;
+  --gradientColor02: #0575E6;
+
+  /* Better Hljs */
+  --backgroundCode: #1e2731;
+  --backgroundName: rgba(0, 0, 0, .2);
+
   /* Radial Status */
   --rs-small-spacing: 2px;
   --rs-large-spacing: 3px;
@@ -54,4 +56,6 @@ This theme is meant to be used with the dark version of discord
   --rs-offline-color: #636b75;
   --rs-streaming-color: #643da7;
   --rs-invisible-color: #747f8d;
+  --rs-phone-visible: block;
+  --rs-phone-color: var(--rs-online-color);
 }
