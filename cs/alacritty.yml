@@ -1,0 +1,81 @@
+window:
+  dynamic_title: true
+  dimensions:
+    columns: 0
+    lines: 0
+
+  position:
+    x: 50
+    y: 50
+
+  #startup_mode: SimpleFullscreen
+  #position:
+    #x: 0
+    #y: 0
+
+  padding:
+    x: 20
+    y: 20 
+
+  dynamic_padding: false
+  #decorations: none
+
+scrolling:
+  history: 50000
+  multiplier: 3
+
+font:
+  normal:
+    family: terminus
+    style: Regular
+
+  bold:
+    family: terminus
+    style: Bold
+
+  italic:
+    family: terminus
+    style: Bold Italic
+
+  size: 11
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+  use_thin_strokes: true
+
+draw_bold_text_with_bright_colors: true
+
+# Colors (Gotham)
+colors:
+  # Default colors
+  primary:
+    background: '0x10151f'
+    foreground: '0x98d1ce'
+
+  # Normal colors
+  normal:
+    black: '0x10151f'
+    red: '0x264367'
+    green: '0x314674'
+    yellow: '0x402824'
+    blue: '0x37508a'
+    magenta: '0x3363a5'
+    cyan: '0x3967b6'
+    white: '0x909abd'
+
+  # Bright colors
+  bright:
+    black: '0x676e89'
+    red: '0x304d71'
+    green: '0x3b507f'
+    yellow: '0x584d56'
+    blue: '0x415a94'
+    magenta: '0x3c6cae'
+    cyan: '0x4371c0'
+    white: '0x9aa4c7'
